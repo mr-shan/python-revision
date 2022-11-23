@@ -25,7 +25,9 @@ odds_copy = odds[:]   # copy list with slice operator
 odds_copy.sort(reverse=True)
 
 # even_copy = evens.copy()
-print(hasattr(evens, 'copy') and callable(getattr(evens, 'copy')))   # check if copy method exists on evens list
+
+# check if copy attribute exists on evens list and if it's callable
+print(hasattr(evens, 'copy') and callable(getattr(evens, 'copy')))
 
 print(odds)
 print(odds_copy)
